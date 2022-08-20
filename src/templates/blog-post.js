@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { useRef, useEffect } from "react";
 
 
-import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
+// import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 
 // import Bio from "../components/bio"
 import Layout from "../components/layout"

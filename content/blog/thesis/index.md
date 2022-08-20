@@ -2,7 +2,7 @@
 title: Bachelor thesis
 date: "2015-05-01T22:12:03.284Z"
 description: "Custom Wordpress Website for a small family restaurant"
-thumbnail: "/content/blog/new-beginnings/a.png"
+thumb: "dog.jpg"
 ---
 # [Thesis](https://drive.google.com/file/d/1LgFRte0RF_IqsgYnoEPG0JhhDaYKyMSm/view)
 

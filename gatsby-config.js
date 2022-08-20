@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Home`,
+    title: `<`,
     author: {
       name: `George Kolev`,
       summary: `who lives and works in Sofia.`,
@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [`gatsby-plugin-sass`,
+  `gatsby-plugin-sharp`,
 
     `gatsby-plugin-image`,
     {

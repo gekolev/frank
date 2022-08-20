@@ -2,7 +2,7 @@
 title: Piuenique Custom WP site
 date: "2015-05-01T22:12:03.284Z"
 description: "Custom Wordpress Website for a small family restaurant"
-thumbnail: "/content/blog/new-beginnings/a.png"
+thumb: "dog.jpg"
 ---
 During my internship (at [ny](https://www.ny.se/)) I worked on one client project. I was the sole developer for this one page website. It was my first time using php and WordPress. In terms of plugins I used Advanced Custom Fields mainly. And all other SEO and other stuff related plugins which I dont really understand. I worked closely with an Art Director and collaborated with her on most things.
 
