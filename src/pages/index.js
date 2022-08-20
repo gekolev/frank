@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { useRef, useEffect } from "react";
 import Img from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image"
 
 // import LocomotiveScroll from 'locomotive-scroll';
 import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
@@ -54,7 +55,8 @@ const BlogIndex = ({ data, location }) => {
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
-                  <Img fluid={post.frontmatter.thumb.childImageSharp.fluid}/>
+                  {/* <StaticImage src={"https://placekitten.com/800/600"} /> */}
+                  {/* <Img fluid={post.frontmatter.thumb.childImageSharp.fluid}/> */}
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
