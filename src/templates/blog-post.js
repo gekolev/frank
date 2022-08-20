@@ -1,7 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { useRef, useEffect } from "react";
 
-import Bio from "../components/bio"
+
+import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
+
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -11,7 +15,20 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
 
+  useEffect(() => {
+    import("locomotive-scroll").then(locomotiveModule => {
+      const scroll = new locomotiveModule.default({
+        el: ref.current,
+        smooth: true,
+        smoothMobile: false,
+      })
+    })
+  }, [])
+
+  const ref = useRef(null);
+
   return (
+    <div className="scroll-container" data-scroll-container ref={ref}>
     <Layout location={location} title={siteTitle}>
       <article
         className="blog-post"
@@ -27,9 +44,7 @@ const BlogPostTemplate = ({
           itemProp="articleBody"
         />
         <hr />
-        <footer>
-          <Bio />
-        </footer>
+        
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -38,7 +53,7 @@ const BlogPostTemplate = ({
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
+            padding: 0
           }}
         >
           <li>
@@ -58,6 +73,7 @@ const BlogPostTemplate = ({
         </ul>
       </nav>
     </Layout>
+    </div>
   )
 }
 

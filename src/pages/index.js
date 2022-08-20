@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { useRef, useEffect } from "react";
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 
 // import Bio from "../components/bio"
@@ -9,21 +9,24 @@ import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 import Seo from "../components/seo"
 import Intro from "../components/intro"
 import Outro from "../components/outro"
+import Footer from "../components/footer"
 
 const BlogIndex = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  const ref = useRef(null);
-  useEffect(()=>
-  {
-    if (ref) {
-      new LocomotiveScroll({
+  
+  useEffect(() => {
+    import("locomotive-scroll").then(locomotiveModule => {
+      const scroll = new locomotiveModule.default({
         el: ref.current,
         smooth: true,
-        multiplier: 2
+        smoothMobile: false,
       })
-    }
-  },[])
+    })
+  }, [])
+
+  const ref = useRef(null);
+
   return (
     <div className="scroll-container" data-scroll-container ref={ref}>
     {/* <Layout location={location} title={siteTitle}> */}
@@ -63,6 +66,7 @@ const BlogIndex = ({ data, location }) => {
       </ol>
       <Outro />
     {/* </Layout> */}
+    <Footer />
     </div>
   )
 }

@@ -1,8 +1,9 @@
+$base-color: #f2f2f2;
 .intro{
     position: static;
     width: 100%;
     height: 100vh;
-    background-color: rgb(222, 222, 222);
+    background-color: $base-color;
     overflow: hidden;
     h2{
         text-align: right;
@@ -53,18 +54,36 @@
     display: flex;
     align-items:center;
     justify-content: center;
+    position: relative;
     .intro-bottom{
+    position: absolute;
+    bottom: -250px;
     border-top: 1px solid black;
     padding-top: 1vw;
     width: 90%;
-    position: absolute;
-    bottom: 2vw;
     font-weight: 600;
     }
 }
 
+.has-scroll-smooth 
+{position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;}
+
+[data-load-container] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+}
 
 .outro{
+    margin-top: 100px;
+    margin-bottom: 100px;
     @extend .font2;
     font-weight: 900;
     width: 100%;
@@ -74,7 +93,7 @@
     .holder{
     width: 90%;
     // background-color: red;
-    height: 200px;
+    // height: 200px;
     display: flex;
         h3{
             font-size: 5vw;
@@ -85,10 +104,78 @@
     }
 }
 .about-text{
-    margin-top: 3vw;
+    // margin-top: 3vw;
+    ul{
+        list-style-type: none;
+    }
+    h4{
+        font-size: 2vw;
+        margin-top: 5vw;
+    }
 }
-.helper{
-    height: 100vh;
-    background-color: orange;
+.item{
+    // border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        a{
+            position: relative;
+            text-decoration: none;
+            color: black;
+            .arrow{
+                position: absolute;
+                transform: translateX(0px);
+    transition: transform 0.3s ease;
+    left: -50px;
+            :hover{
+                left:-20px;
+            }
+            }
+        }
+    }
+}
+.arrow{
+    transform: translateX(0px);
+    transition: transform 0.3s ease;
+}
+.arrow:hover{
+    transform: translateX(10px);
+}
 
+body{
+    overflow-y: hidden;
+    background-color: $base-color;
+}
+
+.animate{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.scroll-class{
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-holder{
+    background-color: black;
+    // color: beige;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: $base-color;
+        font-size: 10vw;
+        text-decoration: none;
+    }
 }

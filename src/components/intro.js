@@ -32,7 +32,7 @@
             <div className="info">
                 <span>01/</span>
                 <span>Currently Feelance Web Consultant</span>
-                <span>Based on planet Earth</span>
+                <span>Based in Europe</span>
                 <span>Contact</span>
             </div>
         </div>
