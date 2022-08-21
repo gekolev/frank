@@ -171,7 +171,7 @@ html.has-scroll-smooth {
     top:-4px;
     @media (max-width: 425px){
         left: -25px;
-        top:-4px;
+        top:-2px;
        }
             :hover{
                 left:-20px;
@@ -179,13 +179,6 @@ html.has-scroll-smooth {
             }
         }
     }
-}
-.arrow{
-    transform: translateX(0px);
-    transition: transform 0.3s ease;
-}
-.arrow:hover{
-    transform: translateX(10px);
 }
 
 body{
@@ -233,6 +226,7 @@ footer{
     align-items: center;
     justify-content: center;
     z-index: 10;
+  
   }
   
   .prl-logo {
@@ -283,9 +277,9 @@ footer{
 .scroll-container{
     perspective: 1px;
 }
-.c-scrollbar{
-    display: none;
-}
+// .c-scrollbar{
+//     display: none;
+// }
 .center{
     display: flex;
     align-items: center;

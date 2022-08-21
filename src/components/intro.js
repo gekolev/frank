@@ -152,7 +152,7 @@ tl.to(".preloader", {
             <div className="persianGreen-slider"></div>
             <div className="white-slider"></div>
         </div> */}
-          <div className="preloader">
+          <div className="preloader d-only">
             <div className="lightCyan-slider"></div>
             <div className="persianGreen-slider"></div>
             <div className="white-slider"></div>
