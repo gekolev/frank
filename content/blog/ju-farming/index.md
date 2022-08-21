@@ -2,7 +2,7 @@
 title: Ju Farming - Browser game
 date: "2022-02-28T22:40:32.169Z"
 description: University project made with Phaser.js 
-thumb: "dog.jpg"
+thumb: "28.png"
 ---
 
 Special thanks to the amazing Antonia Ziegler and Jordan Atanasov who made this possible. We worked as a group on this project and without their expertise and resilience it would not have been the same.

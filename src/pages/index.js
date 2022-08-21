@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import { useRef, useEffect } from "react";
-import Img from "gatsby-plugin-image";
-import { StaticImage } from "gatsby-plugin-image"
+// import Img from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // import LocomotiveScroll from 'locomotive-scroll';
 import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
@@ -15,6 +15,7 @@ import Outro from "../components/outro"
 import Footer from "../components/footer"
 
 const BlogIndex = ({ data, location }) => {
+
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   
@@ -37,25 +38,29 @@ const BlogIndex = ({ data, location }) => {
       <Intro />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
+          
+          const thumb = getImage(post.frontmatter.thumb);
+          console.log("Test got",thumb)
           const title = post.frontmatter.title || post.fields.slug
 
           return (
+            
             <li key={post.fields.slug}>
               <article
                 className="post-list-item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
+                <section>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
+                  {/* <small>{post.frontmatter.date}</small> */}
+                </section>
                 <section>
-                  {/* <StaticImage src={"https://placekitten.com/800/600"} /> */}
+                  <GatsbyImage className="thumb" image={thumb} alt="thumbnail"></GatsbyImage>
                   {/* <Img fluid={post.frontmatter.thumb.childImageSharp.fluid}/> */}
                   <p
                     dangerouslySetInnerHTML={{
@@ -83,7 +88,7 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title="George Kolev" />
 
 export const pageQuery = graphql`
   query {
@@ -104,9 +109,7 @@ export const pageQuery = graphql`
           description
           thumb {
             childImageSharp{
-              fluid{
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData
             }
           }
         }
