@@ -1,7 +1,7 @@
 ---
 title: Milky Way - Three.js Gyro Experience
 date: "2022-02-28T22:40:32.169Z"
-description: Simple passion project that uses modern technologies immersing the user into space or as close to space as you can get trough your phone.
+description: Turn your phone into a telescope.
 thumb: "space.png"
 
 ---

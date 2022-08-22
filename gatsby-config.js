@@ -5,7 +5,7 @@ module.exports = {
       name: `George Kolev`,
       summary: `who lives and works in Sofia.`,
     },
-    description: `A simple portfolio showcasing some minimalistic projects.`,
+    description: `A simple portfolio showcasing some projects.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `gekolev`,

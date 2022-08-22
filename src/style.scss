@@ -33,6 +33,7 @@ $base-color: #f2f2f2;
         display: none;
     }
 }
+
 .plus-symbol{
     // font-size:32px;
     font-weight:600;
@@ -147,6 +148,19 @@ html.has-scroll-smooth {
            }
     }
 }
+.wiwi{
+    @extend .center;
+}
+.max90{
+    width: 90%;
+}
+.project-title {
+
+    font-size: 5vw;
+            @media (max-width: 425px){
+                font-size: 48px;
+               }
+}
 .item{
     // border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -185,6 +199,7 @@ body{
     overflow-y: hidden;
     background-color: $base-color;
     position: relative;
+    max-height: 100vh;
 }
 
 .animate{
@@ -255,7 +270,7 @@ footer{
   }
   
   .white-slider {
-    background: #fff;
+    background: rgb(222, 222, 222);
   }
   
   .hide {
@@ -289,4 +304,82 @@ footer{
 }
 .full{
     width: 100%;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // max-width:50%;
+    li{
+        width: 90%;
+    // @extend .center;
+    }
+}
+
+
+.project:nth-child(2n) {
+    .post-list-item{
+        flex-direction: row-reverse;
+    }
+  }
+ 
+.post-list-item {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    flex-direction: row;
+    // section{
+    //     width: 50%;
+    // }
+
+    // flex-direction: row-reverse;
+   background-color: blue;
+   
+  }
+
+
+//   .post-list-item:nth-child(2){
+
+//     flex-direction: row-reverse;
+//   }
+// .projects{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//     flex-direction: row;
+// }
+//   .projects:nth-child(even){
+//     flex-direction: row-reverse;
+//     background-color: red;
+//   }
+  .remove{
+    display: block;
+}
+
+// .preloader{
+//     display: none;
+// }
+.project-heading-holder{
+    h2{
+        font-size: 1.5vw;
+        span{
+            color:black;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        p{
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
 }

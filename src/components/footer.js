@@ -13,7 +13,7 @@
     return (
       <footer>
         <div className="footer-holder">
-            <a  data-scroll data-scroll-class="scroll-class" className="animate" href="mailto:george.gkolev@gmail.com">&#10132;</a>
+            <a data-scroll data-scroll-class="scroll-class" className="animate" href="mailto:george.gkolev@gmail.com">&#10132;</a>
         </div>
       </footer>
     )

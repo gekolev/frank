@@ -8,6 +8,8 @@ import { useRef, useEffect } from "react";
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Scroll from "../components/locomotiveScroll"
+
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -16,19 +18,20 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
 
   useEffect(() => {
-    import("locomotive-scroll").then(locomotiveModule => {
-      const scroll = new locomotiveModule.default({
-        el: ref.current,
-        smooth: true,
-        smoothMobile: false,
-      })
-    })
+    // import("locomotive-scroll").then(locomotiveModule => {
+    //   const scroll = new locomotiveModule.default({
+    //     el: ref.current,
+    //     smooth: true,
+    //     smoothMobile: false,
+    //   })
+    // })
   }, [])
 
   const ref = useRef(null);
 
   return (
-    <div className="scroll-container" data-scroll-container ref={ref}>
+    <div>
+      <Scroll callbacks={location} />
     <Layout location={location} title={siteTitle}>
       <article
         className="blog-post"
