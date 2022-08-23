@@ -25,7 +25,7 @@
 
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-const hasRunIntro = localStorage.getItem("hasRunIntro");
+// const hasRunIntro = localStorage.getItem("hasRunIntro");
 // if (hasRunIntro !== "1"){
     // Run the intro...
     tl.to(".lightCyan-slider", {

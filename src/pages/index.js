@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
-import { useRef, useEffect } from "react";
+// import { useEffect } from "react";
 // import Img from "gatsby-plugin-image";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
@@ -19,7 +19,6 @@ const BlogIndex = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes;
 
-  useEffect(() => {}, []);
 
   return (
     <>
