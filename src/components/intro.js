@@ -84,7 +84,8 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
             <div className="info">
                 <span className="d-only">01/</span>
                 <span className="d-only">Currently Feelance Web Consultant</span>
-                <span>Based in Europe</span>
+                <span><a target="blank" href="https://www.google.com/maps/place/Europe/data=!4m2!3m1!1s0x46ed8886cfadda85:0x72ef99e6b3fcf079?sa=X&ved=2ahUKEwj4poDww9z5AhWUXvEDHUwrBQAQ8gF6BAgGEAE">Based in Europe</a></span>
+
                 <span><a href="mailto:george.gkolev@gmail.com">Contact</a></span>
             </div>
         </div>

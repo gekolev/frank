@@ -52,7 +52,7 @@ const BlogIndex = ({ data, location }) => {
                   itemScope
                   itemType="http://schema.org/Article"
                 >
-                  <section className="project-heading-holder font2">
+                  <section data-scroll data-scroll-class="scroll-class"  className="project-heading-holder font2">
                     <Link to={post.fields.slug} itemProp="url">
                       <h2>
                         <span itemProp="headline">{title}</span>
@@ -68,7 +68,7 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </section>
 
-                  <section>
+                  <section data-scroll data-scroll-class="scroll-class" >
                   <Link to={post.fields.slug} itemProp="url">
                     <GatsbyImage
                       className="thumb"
