@@ -1,7 +1,7 @@
 ---
 title: Bachelor thesis
 date: "2015-05-01T22:12:03.284Z"
-description: "Custom Wordpress Website for a small family restaurant"
+description: "Web design for different generations"
 thumb: "cover.png"
 ---
 ## Web design for different generations: initial impact of web aesthetics
