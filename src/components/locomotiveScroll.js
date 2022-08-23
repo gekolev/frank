@@ -9,7 +9,9 @@ const scroll = {
     container: "#___gatsby",
     options: {
       smooth: true,
-      smoothMobile: true,
+      mobile: {
+        smooth: true
+    },
       getDirection: true,
       touchMultiplier: 2.5,
       lerp: 0.5,
