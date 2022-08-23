@@ -55,7 +55,7 @@ const BlogIndex = ({ data, location }) => {
                   <section data-scroll data-scroll-class="scroll-class"  className="project-heading-holder font2">
                     <Link to={post.fields.slug} itemProp="url">
                       <h2>
-                        <span itemProp="headline">{title}</span>
+                        <span className="heavy" itemProp="headline">{title}</span>
                       </h2>
                       {/* <small>{post.frontmatter.date}</small> */}
 
