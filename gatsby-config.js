@@ -3,7 +3,7 @@ module.exports = {
     title: `Portfolio`,
     author: {
       name: `George Kolev`,
-      summary: `who lives and works in Sofia.`,
+      summary: `who lives and works in Europe.`,
     },
     description: `A simple portfolio showcasing some projects.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -109,8 +109,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `George Kolev Portfolio`,
+        short_name: `Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website

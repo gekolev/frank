@@ -13,6 +13,10 @@ $base-color: #f2f2f2;
     color: black;
   }
 }
+.blog-post{
+  font-family: "Outfit";
+  font-weight: 600;
+}
 .font {
   font-family: "Dx Sitrus";
 }
@@ -56,7 +60,6 @@ $base-color: #f2f2f2;
   font-size: 16px;
   .info {
     width: 90%;
-    // background-color: red;
     display: flex;
     justify-content: space-between;
     margin-top: 1vw;
@@ -77,7 +80,6 @@ $base-color: #f2f2f2;
   position: relative;
   .intro-bottom {
     position: relative;
-    // bottom: -250px;
     border-top: 1px solid black;
     padding-top: 1vw;
     padding-bottom: 2vw;
@@ -122,8 +124,6 @@ html.has-scroll-smooth {
   }
   .holder {
     width: 90%;
-    // background-color: red;
-    // height: 200px;
     display: flex;
     @media (max-width: 425px) {
       flex-direction: column;
@@ -143,7 +143,6 @@ html.has-scroll-smooth {
   }
 }
 .about-text {
-  // margin-top: 3vw;
   ul {
     list-style-type: none;
   }
@@ -201,7 +200,6 @@ html.has-scroll-smooth {
 }
 
 body {
-//   overflow-y: hidden;
   background-color: $base-color;
   position: relative;
   max-height: 100vh;
@@ -224,7 +222,6 @@ footer {
 
 .footer-holder {
   background-color: black;
-  // color: beige;
   width: 90%;
   display: flex;
   align-items: center;
@@ -283,11 +280,6 @@ footer {
   font-weight: lighter;
 }
 
-// .second-line{
-//     z-index: 100;
-//     position: fixed;
-// }
-
 .thumb {
   max-width: 500px;
   filter: grayscale(50%);
@@ -296,9 +288,7 @@ footer {
 .scroll-container {
   perspective: 1px;
 }
-// .c-scrollbar{
-//     display: none;
-// }
+
 .center {
   display: flex;
   align-items: center;
@@ -318,10 +308,8 @@ footer {
   @media (max-width: 425px) {
     margin-bottom: 0;
   }
-  // max-width:50%;
   li {
     width: 90%;
-    // @extend .center;
     @media (max-width: 425px) {
         margin-bottom: 25px;
 
@@ -355,29 +343,10 @@ footer {
     align-items: stretch;
   }
 }
-
-//   .post-list-item:nth-child(2){
-
-//     flex-direction: row-reverse;
-//   }
-// .projects{
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     flex-direction: row;
-// }
-//   .projects:nth-child(even){
-//     flex-direction: row-reverse;
-//     background-color: red;
-//   }
 .remove {
   display: block;
 }
 
-// .preloader{
-//     display: none;
-// }
 .project-heading-holder {
     @media (max-width: 425px) {
         margin-bottom: 15px;
@@ -401,6 +370,19 @@ footer {
     p {
       font-weight: 600;
       font-size: 18px;
+    }
+  }
+}
+
+.blog-post-nav{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding:0;
+    @media (max-width: 425px) {
+      justify-content: center;
     }
   }
 }
