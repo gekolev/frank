@@ -32,25 +32,25 @@ gsap.registerPlugin(ScrollTrigger);
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> Front-end Developer </span>
-                          <span className="link"> <a href="https://edesign.bg/"> <span className="arrow">&#8594;</span> Edesign </a> </span>
+                          <span className="link"> <a target="blank" href="https://edesign.bg/"> <span className="arrow">&#8594;</span> Edesign </a> </span>
                         </div>
                     </li>
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> UI &amp; UX intern </span>
-                          <span className="link"> <a href="https://ny.se/"> <span className="arrow">&#8594;</span> Ny </a> </span>
+                          <span className="link"> <a target="blank" href="https://ny.se/"> <span className="arrow">&#8594;</span> Ny </a> </span>
                         </div>
                     </li>
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> Digital Designer </span>
-                          <span className="link"> <a href="https://www.facebook.com/ssa.jonkoping/"> <span className="arrow">&#8594;</span> SSA </a> </span>
+                          <span className="link"> <a target="blank" href="https://www.facebook.com/ssa.jonkoping/"> <span className="arrow">&#8594;</span> SSA </a> </span>
                         </div>
                     </li>
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> Teaching assistant </span>
-                          <span className="link"> <a href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
+                          <span className="link"> <a target="blank" href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
                         </div>
                     </li>
                   </ul>
@@ -59,19 +59,19 @@ gsap.registerPlugin(ScrollTrigger);
                     <li>
                         <div  data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> MSc in User Experience </span>
-                          <span className="link"> <a href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
+                          <span className="link"> <a target="blank" href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
                         </div>
                     </li>
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> BSc in Informatics and media </span>
-                          <span className="link"> <a href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
+                          <span className="link"> <a target="blank" href="https://ju.se/en.html"> <span className="arrow">&#8594;</span> Ju </a> </span>
                         </div>
                     </li>
                     <li>
                         <div data-scroll data-scroll-class="scroll-class" className="animate item">
                           <span> American College</span>
-                          <span className="link"> <a href="https://ac-arcus.com/en"> <span className="arrow">&#8594;</span> Arcus </a> </span>
+                          <span className="link"> <a target="blank" href="https://ac-arcus.com/en"> <span className="arrow">&#8594;</span> Arcus </a> </span>
                         </div>
                     </li>
                     
